@@ -3,9 +3,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
  
 //Create a react component
-const App = function(){
-    return <div>Hi there!</div>
-}
+const App = () => {
+    return (
+      <div>
+        <label class="label" for="name">Enter name:</label>
+        <input id="name" type="text" />
+        <button style="background-color: blue; color: white;">Submit</button>
+      </div>
+    );
+};
 
 // Take a react component and show it on the screen
 ReactDOM.render(
